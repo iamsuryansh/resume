@@ -1,21 +1,20 @@
 import streamlit as st
+import webbrowser
 st.sidebar.image("https://www.linkpicture.com/q/WhatsApp-Image-2020-07-10-at-1.21.58-AM.jpeg", caption=None, width=150, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
 st.sidebar.title("Suryansh Jain")
 st.sidebar.markdown("Pick a section :")
-am=st.sidebar.button("About me")
-we=st.sidebar.button("Work Experience")
-pj=st.sidebar.button("Projects")
-ec=st.sidebar.button("Extra-curricullar")
-#sections=["About me","Work Experience","Projects","Extra-curricullar"]
-#picked=st.sidebar.radio("Pick a section",sections)
+
+sections=["About me","Work Experience","Projects","Extra-curricullar"]
+picked=st.sidebar.radio("Pick a section",sections)
 #streamlit.image("", caption=None, width=None, use_column_width=False, clamp=False, channels='RGB', format='JPEG')'''
-if am:#picked=="About me":
-    st.subheader("**_About me_**")
+if picked=="About me":
+    st.title("**_About me_**")
     aboutmeSubSection=["Personal info","Education","Skills","Certifications"]
     subsection=st.radio("Pick a subsection",aboutmeSubSection)
     if subsection=="Personal info":
         st.subheader("**_Suryansh Jain_**")
         st.markdown("**_Email_** - suryanshjain531@gmail.com")
+        st.markdown("**_Phone_** - 7574922552")
         st.markdown("**_LinkedIn_** - https://www.linkedin.com/in/suryansh-jain-b10a2117b/")
     if subsection=="Education":
         st.subheader("**_Education_**")
@@ -42,7 +41,7 @@ if am:#picked=="About me":
         st.info("Course - Using Python to Interact with the Operating System")
         st.text("offered by Google through Coursera")
         st.image("https://www.linkpicture.com/q/Coursera-LZ3SLBZLF6RE_page-0001.jpg", caption=None, width=500, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
-elif we:#picked=="Work Experience":
+elif picked=="Work Experience":
     st.title("**_Work Experience_**")
     st.success("Summer Intern - Bharti Airtel Ltd.")
     st.success(" May'18 - Jun'18")
@@ -50,7 +49,7 @@ elif we:#picked=="Work Experience":
     st.info("Analyzed data and generated insights from sites across the city to identify poor network coverage.")
     st.image("https://www.linkpicture.com/q/WhatsApp-Image-2020-07-10-at-2.14.54-AM.jpeg", caption="Developed a GUI using VBA in Excel", width=500, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
     st.image("https://www.linkpicture.com/q/WhatsApp-Image-2020-07-10-at-2.17.33-AM.jpeg", caption="Certificate", width=500, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
-elif pj:#picked=="Projects":
+elif picked=="Projects":
     st.title("**_Projects_**")
     st.subheader("**_1. Advanced Path Finding Algorithm - Python_**")
     st.info("Implemented A * algorithm to calculate shortest path between any two given points that works in practice 1000s (up to 25000) of times faster than the classical Dijkstra's algorithm on real-world road networks.")
@@ -63,7 +62,7 @@ elif pj:#picked=="Projects":
     st.info("Implemented an algorithm to encode 4 out of the 5 cards picked by the player so as to guess the fifth card.")
     st.subheader("**_5. Hand Gesture Controlled Robot - Arduino_**")
     st.info("Created a robot in the form of a wheelchair which works through inputs provided with the movement of arm of differently-abled people.")
-elif ec:#picked=="Extra-curricullar":
+elif picked=="Extra-curricullar":
     st.subheader("**_Positions of responsibility_**")
     st.markdown("**_Co-founder_**")
     st.markdown("The Comedy Club, VIT")
