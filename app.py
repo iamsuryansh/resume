@@ -1,5 +1,4 @@
 import streamlit as st
-import webbrowser
 st.sidebar.image("https://www.linkpicture.com/q/WhatsApp-Image-2020-07-10-at-1.21.58-AM.jpeg", caption=None, width=150, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
 st.sidebar.title("Suryansh Jain")
 st.sidebar.markdown("Pick a section :")
