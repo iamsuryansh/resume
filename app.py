@@ -22,7 +22,7 @@ if picked=="About me":
         st.info("**_CGPA - 8.83_**")
         st.success("2. Senior Secondary - St. Ann's School, Ahmedabad")
         st.info("**_Percentage - 85.4_**")
-        st.success("3. Higher Secondary Secondary - Delhi International School, Indore")
+        st.success("3. Higher Secondary - Delhi International School, Indore")
         st.info("**_CGPA - 10_**")
     elif subsection=="Skills":
         st.info("Python")
