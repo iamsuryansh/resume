@@ -24,6 +24,7 @@ if picked=="About me":
         st.success("3. Higher Secondary - Delhi International School, Indore")
         st.info("**_CGPA - 10_**")
     elif subsection=="Skills":
+        st.subheader("**_Skills_**")
         st.info("Python")
         st.info("SAS")
         st.info("SQL")
@@ -31,6 +32,7 @@ if picked=="About me":
         st.info("Git & Github")
         st.info("Regex")
     elif subsection=="Certifications":
+        st.subheader("**_Certifications_**")
         st.info("Professional Certificate - SAS Visual Business Analytics")
         st.text("offered by SAS through Coursera")
         st.image("https://www.linkpicture.com/q/Coursera-UHPFH9DXH6KP_page-0001.jpg", caption=None, width=500, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
