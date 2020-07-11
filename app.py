@@ -45,7 +45,7 @@ if picked=="About me":
 elif picked=="Work Experience":
     st.title("**_Work Experience_**")
     st.success("Summer Intern - Bharti Airtel Ltd.")
-    st.success(" May'18 - Jun'18")
+    st.success(" May'19 - Jun'19")
     st.info("Worked as a part of network management team.")
     st.info("Analyzed data and generated insights from sites across the city to identify poor network coverage.")
     st.image("https://www.linkpicture.com/q/WhatsApp-Image-2020-07-10-at-2.14.54-AM.jpeg", caption="Developed a GUI using VBA in Excel", width=500, use_column_width=False, clamp=False, channels='RGB', format='JPEG')
